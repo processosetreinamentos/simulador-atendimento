@@ -1,0 +1,234 @@
+body {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 5fr; 
+    grid-template-areas: 
+    'navbar'
+    'content';
+}
+
+.content {
+    grid-area: content;
+    background-color: #e4e1ce;
+    height: 97vh;
+    width: 100%; /* Ajuste a largura para 100% */
+    padding: 20px; /* Ajuste o preenchimento conforme necessário */
+}
+
+.container-css {
+    display: grid;
+    grid-template-rows: 2fr 10fr 1fr;
+    grid-template-areas:
+    'head-chat' 
+    'message-box'
+    'message-input';
+    background-color: #fff;
+    min-width: 70vh;
+    max-width: 97vw; /* Define a largura máxima para 97% da largura da viewport */
+    height: 88vh; /* Define uma altura fixa para a caixa de chat */
+    max-height: 80vh; /* Define a altura máxima para garantir que a barra de rolagem seja exibida */
+    width: 100%; /* Garante que a largura da caixa seja sempre igual à largura do contêiner pai */
+    border-radius: 8px;
+    box-shadow: 4px 3px 3px grey;
+    display: none;
+}
+
+
+#input-container {
+    grid-area: message-input;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin: 10px 30px 10px 30px;
+}
+
+.head-chat {
+    background-color: #efefef;
+    height: fit-content;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/* Botão envio de mensagem */
+#user-input {
+    position: relative;
+    flex: 1;
+    padding: 2vh;
+    margin-right: 10px;
+}
+
+button {
+    padding: 1vh;
+    cursor: pointer;
+}
+
+#finalizar {
+    background-color: #d61f1f;
+    color: white;
+    position: relative;
+    border-radius: 10px;
+    border-color: #d61f1f;
+    width: 7%;
+    text-align: center;
+}
+
+#finalizar:hover {
+    transition: 5ms;
+    background-color: #8c1717;
+    border-color: #680d0d;
+}
+
+.content-chat {
+    overflow-y: auto; /* Adiciona uma barra de rolagem quando o conteúdo excede o tamanho da caixa */
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    padding: 2%;
+}
+
+/* Estilos gerais para todas as mensagens */
+.mensagem {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden; /* Garante que o background não se estenda além da caixa da mensagem */
+}
+
+/* Estilos para o nome do remetente */
+.mensagem .info {
+    font-weight: bold;
+}
+
+/* Estilos para o texto da mensagem */
+.mensagem .texto {
+    padding: 10px; /* Espaçamento interno para o texto da mensagem */
+}
+
+/* Estilos para a hora */
+.mensagem .hora {
+    font-size: 0.8rem;
+    color: #dbdbdbd7;
+    padding: 5px; /* Espaçamento interno para a hora */
+    width: 30%;
+    min-width: 20px;
+    text-align: right;
+}
+
+/* Estilos específicos para mensagens do usuário */
+.mensagem.atendente .texto {
+    background-color: #dbdbdbd7;
+    color: #000000;
+    float: right;
+    text-align: right;
+    clear: right;
+    width: 30%;
+    min-width: 20px;
+}
+
+/* Estilos específicos para mensagens do atendente */
+.mensagem.cliente .texto {
+    background-color: #dbdbdbd7;
+    color: #000000;
+    width: 30%;
+    min-width: 20px;
+}
+
+.mensagem.cliente .texto + .hora {
+    background-color: #dbdbdbd7;
+    color: #000000;
+    float: left; /* Alinha a hora à direita */
+    padding-right: 10px;
+
+}
+
+.mensagem.atendente .texto + .hora {
+    background-color: #dbdbdbd7;
+    color: #000000;
+    float: right; /* Alinha a hora à direita */
+    clear: right;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.mensagem.atendente .info {
+    text-align: right;
+    clear: right;
+}
+
+.limite-atingido {
+    background-color: red;
+    animation: Pisca infinite 27s;
+}
+
+@keyframes Pisca{
+    0% { background-color: rgb(255, 107, 107); }
+    5% { background-color: white; }
+    10% { background-color: rgb(255, 107, 107); }
+    15% { background-color: white; }
+    20% { background-color: rgb(255, 107, 107); }
+    25% { background-color: white; }
+    30% { background-color: rgb(255, 107, 107); }
+    35% { background-color: white; }
+    40% { background-color: rgb(255, 107, 107); }
+    45% { background-color: white; }
+    50% { background-color: rgb(255, 107, 107); }
+    55% { background-color: white; }
+    60% { background-color: rgb(255, 107, 107); }
+    65% { background-color: white; }
+    70% { background-color: rgb(255, 107, 107); }
+    75% { background-color: white; }
+    80% { background-color: rgb(255, 107, 107); }
+    85% { background-color: white; }
+    90% { background-color: rgb(255, 107, 107); }
+    95% { background-color: white; }
+    100% { background-color: rgb(255, 107, 107); }
+}
+
+.avatar-cliente{
+    width: 3vw;
+}
+
+.box-cliente{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 5px 10px 0px 10px;
+    width: 5.2vw;
+}
+
+.font-pequena{
+    font-size: 13px;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.568);
+}
+
+dialog {
+    border: none;
+    border-radius: .5rem;
+    box-shadow: 0 0 1em rgba(0 0 0 / .3);
+    padding-top: 7px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+#modal-button {
+    border: none;
+    border-radius: 4px;
+    width: 20%;
+}
+
+#modal-button:hover {
+    background-color: #d61f1f;
+    color: white;
+}
+
+#iniciar_simul {
+    border-radius: 6px;
+}
