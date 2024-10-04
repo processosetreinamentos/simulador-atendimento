@@ -463,36 +463,3 @@ export const respostaDesconhecida = [
     'nao entendi', 'Não entendi', '?', 'Não estou te entendendo', 'Que isso', '??', 'nao estou compreendendo',
     'Como assim', 'Hã', 'O que quer dizer',
 ]
-
-
-// export let aguardandoCalmo
-// export let aguardandoIrritado
-// export let mensagemAutomatica
-// export let scripts_aguardandoAtual
-// // let scripts_aguardando = cliente_scripts[0]
-
-// for (let statusCliente in scripts_aguardando) {
-//     if(statusCliente === statusAtual) {
-//         scripts_aguardandoAtual = scripts_aguardando.statusAtual
-//         console.log(scripts_aguardandoAtual)
-//         break
-//     }
-// }
-
-// export function mensagemAutomaticaStatus(status_select) {
-//     switch (status_select) {
-//         case 'CALMO':
-//             // Gerar indice aleatório
-//             indiceAleatorio = Math.floor(Math.random() * scripts_aguardandoAtual.length);
-//             mensagemAutomatica = aguardandoCalmo[indiceAleatorio];
-//             break
-
-//         case 'IMPACIENTE':      
-//             // Gerar indice aleatório
-//             indiceAleatorio = Math.floor(Math.random() * scripts_aguardandoAtual.length);
-//             mensagemAutomatica = aguardandoIrritado[indiceAleatorio];
-//             break
-//         default:
-//             return [];
-//     }
-// }
