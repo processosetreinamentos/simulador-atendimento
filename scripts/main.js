@@ -91,12 +91,10 @@ function respostaAutomatica() {
     function msg_aguardando (status_select) {
         switch (status_select) {
             case 'CALMO':
-                console.log('Mensagem baseada no humor enviada')
                 mensagemAutomatica = aguardandoCalmo[indiceAleatorio(aguardandoCalmo)]
             break
                 
             case 'IRRITADO':
-                console.log('Mensagem baseada no humor enviada')
                 mensagemAutomatica = aguardandoIrritado[indiceAleatorio(aguardandoIrritado)]
             break
                     
@@ -123,7 +121,6 @@ function upgradeStatus() {
                     
         if ((totalTempos <= 45) & (statusAtual === tipoStatus[1])) {
             statusAtual = tipoStatus[0]
-            console.log(`Humor alterado para ${statusAtual}`)
             dadosStatus = statusCliente.CALMO
             contadorHumor++
             document.getElementById("humorFinal").textContent = contadorHumor
@@ -159,7 +156,6 @@ const converter = (seg) => {
 
 function repetirMensagem() {
     if (contagemMensagens >= 0 & segundoglobal == 50){
-        console.log('Tempo de espera atingido')
         respostaAutomatica()
     }
 }
@@ -180,7 +176,6 @@ function humorTempoEspera() {
         if (statusAtual == tipoStatus[0]) {
             dadosStatus = statusCliente.IRRITADO
             statusAtual = tipoStatus[1]
-            console.log('Status atual do cliente:', statusAtual)
             contadorHumor++
             document.getElementById("humorFinal").textContent = contadorHumor
         }
@@ -216,7 +211,6 @@ function enviarMensagem() {
         
         // Se o intervalo já estiver sendo executado, limpe-o
         ULTIMOS_TME.push(minutoglobal, segundoglobal)
-        console.log(ULTIMOS_TME)
         upgradeStatus()
         
         // Simular resposta automática após o tempo de espera ajustado
@@ -237,8 +231,6 @@ function iniciarAtendimento() {
     setInterval(repetirMensagem, 1000)
     chatbox.style.display = 'grid'
     btn_iniciar_simul.style.display = 'none'
-    console.log('Atendimento iniciado com sucesso')
-    console.log('Humor:', statusAtual)
 }
 
 function finalizarAtendimento() {
