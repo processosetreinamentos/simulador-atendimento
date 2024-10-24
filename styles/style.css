@@ -6,6 +6,8 @@ body {
     grid-template-areas: 
     'navbar'
     'content';
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .content {
@@ -161,10 +163,10 @@ button {
 
 .limite-atingido {
     background-color: red;
-    animation: Pisca infinite 27s;
+    animation: Alarme infinite 27s;
 }
 
-@keyframes Pisca{
+@keyframes Alarme{
     0% { background-color: rgb(255, 107, 107); }
     5% { background-color: white; }
     10% { background-color: rgb(255, 107, 107); }
