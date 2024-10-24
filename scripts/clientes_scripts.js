@@ -35,13 +35,13 @@ export const scriptSegundaVia = {
     'ajudando em algo mais': 'Não, tudo certo obrigado',
     'ajuda-lo em algo mais': 'Não, tudo certo obrigado',
     'ajudá-lo em algo mais': 'Não, tudo certo obrigado',
-    'desktop agradece seu': 'Obrigado',
-    'dekstop agradece o': 'Obrigado',
+    'agradece seu': 'Obrigado',
+    'agradece o': 'Obrigado',
     'avalie': 'O atendimento foi bom',
     'avalia': 'O atendimento foi bom',
     'avaliaçao': 'O atendimento foi bom',
     'avaliação': 'O atendimento foi bom',
-    'em nome da desktop': 'Obrigado',
+    'em nome da': 'Obrigado',
 
     //TUDO BEM
     'tudo bem': 'Estou bem', 
@@ -197,13 +197,13 @@ export const scriptSemSinal = {
     'ajudando em algo mais': 'Não, tudo certo obrigado',
     'ajuda-lo em algo mais': 'Não, tudo certo obrigado',
     'ajudá-lo em algo mais': 'Não, tudo certo obrigado',
-    'desktop agradece seu': 'Obrigado',
-    'dekstop agradece o': 'Obrigado',
+    'agradece seu': 'Obrigado',
+    'agradece o': 'Obrigado',
     'avalie': 'O atendimento foi bom',
     'avalia': 'O atendimento foi bom',
     'avaliaçao': 'O atendimento foi bom',
     'avaliação': 'O atendimento foi bom',
-    'em nome da desktop': 'Obrigado',
+    'em nome da': 'Obrigado',
 
     //TUDO BEM
     'tudo bem': 'Estou bem', 
