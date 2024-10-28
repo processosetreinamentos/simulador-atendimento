@@ -1,8 +1,8 @@
 # Simulador de atendimento
 Este simulador tem como objetivo demonstrar um atendimento de telecomunicação.
 
-## Pré-requisitos
-Utilizar o Mozilla Firefox para acessar o simulador.
+## Requisitos
+Utilizar o navegador Mozilla Firefox para acessar o simulador.
 
 ## Autores
 * Deivid N. - [dednascimento](https://github.com/dednascimento)
