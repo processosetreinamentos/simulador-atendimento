@@ -1,5 +1,5 @@
 # Simulador de atendimento
-Este simulador tem como objetivo demonstrar um atendimento de telecomunicação.
+Este simulador tem como objetivo demonstrar um atendimento de telecomunicação utilizando dados fictícios.
 
 ## Requisitos
 Utilizar o navegador Mozilla Firefox para acessar o simulador.
