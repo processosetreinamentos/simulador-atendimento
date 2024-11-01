@@ -270,3 +270,10 @@ botaoFinalizar.addEventListener('click', finalizarAtendimento)
 
 // Botão para atualizar a página após fechar o modal
 botaoFecharModal.addEventListener('click', fecharModal)
+
+// Envie a mensagem apertando enter
+document.addEventListener('keydown', function(e) {
+    if(e.key == 'Enter') {
+        document.getElementById('enviar').click();
+    }
+});
