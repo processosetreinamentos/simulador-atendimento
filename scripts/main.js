@@ -8,24 +8,28 @@ const userInput = document.getElementById('user-input')
 const botaoEnviar = document.getElementById('enviar')
 const divCliente = document.getElementById('div-box-cliente')
 const timer = document.querySelector("#timeryt")
-const btn_iniciar_simul = document.querySelector("#iniciar_simul")
-const chatbox = document.querySelector(".container-css")
+const botaoIniciaSimul = document.querySelector("#iniciar_simul")
+const chatBox = document.querySelector(".container-css")
 const audioNotif = new Audio('assets/audio/NotifySound.mp3')
 const audioPop = new Audio('assets/audio/PopSound.mp3')
 const botaoFinalizar = document.getElementById('finalizar')
-const modal = document.querySelector("dialog")
-const botaoFecharModal = document.getElementById("modal-button")
+const botaoTransferir = document.getElementById('transferencia')
+const modal = document.getElementById('modal-encerrar')
+const modalTransferir = document.getElementById('modal-transferir')
+const botaoFecharAtend = document.getElementById('modal-button')
+const botaoTransferirAtend = document.getElementById('modal-button2')
+const botaoFechaModal = document.getElementById('cancel-button')
 
 // Variáveis Globais
 let contagemMensagens = 0
-let ULTIMOS_TME = []
+let ultimosTme = []
 let dadosStatus
 let contadorHumor = 0
 const tipoStatus = ['CALMO', 'IRRITADO']
 let statusAtual = tipoStatus[indiceAleatorio(tipoStatus)]; // Gerar indice aleatório
 let tmpini = null
-let minutoglobal = 0
-let segundoglobal = 0
+let minutoGlobal = 0
+let segundoGlobal = 0
 let minutoFinal = 0
 let segundoFinal = 0
 let intervalo = null
@@ -88,7 +92,7 @@ function respostaAutomatica() {
     
     let mensagemAutomatica = null
     
-    function msg_aguardando (status_select) {
+    function msgAguardando (status_select) {
         switch (status_select) {
             case 'CALMO':
                 mensagemAutomatica = aguardandoCalmo[indiceAleatorio(aguardandoCalmo)]
@@ -103,7 +107,7 @@ function respostaAutomatica() {
         }
     }
 
-    msg_aguardando(statusAtual)
+    msgAguardando(statusAtual)
     audioPop.play()
     exibirMensagem(`Cliente (${dadosStatus.nome})`, mensagemAutomatica, 'cliente')
 }
@@ -112,10 +116,10 @@ function respostaAutomatica() {
 function upgradeStatus() {
     let totalTempos = 0
                 
-    if (ULTIMOS_TME.length > 4) {
+    if (ultimosTme.length > 4) {
                     
         // Iterar sobre os valores em ULTIMOS_TME
-        for (let tempo of Object.values(ULTIMOS_TME)) {
+        for (let tempo of Object.values(ultimosTme)) {
             totalTempos = totalTempos + tempo
         }
                     
@@ -124,21 +128,21 @@ function upgradeStatus() {
             dadosStatus = statusCliente.CALMO
             contadorHumor++
             document.getElementById("humorFinal").textContent = contadorHumor
-            ULTIMOS_TME = []
+            ultimosTme = []
             totalTempos = 0
         } else if ((totalTempos <= 45) & (statusAtual === tipoStatus[0])) {
-            ULTIMOS_TME = []
+            ultimosTme = []
             totalTempos = 0
         } else {
-            ULTIMOS_TME = []
+            ultimosTme = []
             totalTempos = 0
         }
     }
 }
             
 const contador = () => {
-    const tmpatual = Date.now()
-    let cont = tmpatual - tmpini
+    const tmpAtual = Date.now()
+    let cont = tmpAtual - tmpini
     let seg = Math.floor((cont)/1000)
     timer.innerHTML = converter(seg)
 }
@@ -148,20 +152,20 @@ const converter = (seg) => {
     const resto = seg%3600
     const minuto = Math.floor(resto/60)
     const segundo = Math.floor(resto%60)
-    const tempoformatado = (hora < 10 ? "0" +hora:hora)+":"+(minuto < 10 ? "0" +minuto:minuto)+":"+(segundo < 10 ? "0" +segundo:segundo)
-    minutoglobal = minuto
-    segundoglobal = segundo
-    return tempoformatado
+    const tempoFormatado = (hora < 10 ? "0" +hora:hora)+":"+(minuto < 10 ? "0" +minuto:minuto)+":"+(segundo < 10 ? "0" +segundo:segundo)
+    minutoGlobal = minuto
+    segundoGlobal = segundo
+    return tempoFormatado
 }
 
 function repetirMensagem() {
-    if (contagemMensagens >= 0 & segundoglobal == 50){
+    if (contagemMensagens >= 0 & segundoGlobal == 50){
         respostaAutomatica()
     }
 }
 
 function calcularTE() {
-    if (minutoglobal >= 2) {
+    if (minutoGlobal >= 2) {
         divCliente.classList.add('limite-atingido')
         divCliente.classList.remove('bg-white')
     } else {
@@ -172,7 +176,7 @@ function calcularTE() {
 
 // Função para verificar o tempo de resposta
 function humorTempoEspera() {
-    if (minutoglobal == dadosStatus.tempoMaximo) {
+    if (minutoGlobal == dadosStatus.tempoMaximo) {
         if (statusAtual == tipoStatus[0]) {
             dadosStatus = statusCliente.IRRITADO
             statusAtual = tipoStatus[1]
@@ -190,8 +194,8 @@ function enviarMensagem() {
         exibirMensagem('Eu', mensagemUsuario, 'atendente')
         userInput.value = ''
         
-        minutoFinal = minutoFinal + minutoglobal
-        segundoFinal = segundoFinal + segundoglobal
+        minutoFinal = minutoFinal + minutoGlobal
+        segundoFinal = segundoFinal + segundoGlobal
         if (segundoFinal == 60) {
             minutoFinal++
             segundoFinal = 0
@@ -210,7 +214,7 @@ function enviarMensagem() {
         contagemMensagens += 1
         
         // Se o intervalo já estiver sendo executado, limpe-o
-        ULTIMOS_TME.push(minutoglobal, segundoglobal)
+        ultimosTme.push(minutoGlobal, segundoGlobal)
         upgradeStatus()
         
         // Simular resposta automática após o tempo de espera ajustado
@@ -229,13 +233,13 @@ function iniciarAtendimento() {
     setInterval(calcularTE, 1000)
     setInterval(humorTempoEspera, 1000)
     setInterval(repetirMensagem, 1000)
-    chatbox.style.display = 'grid'
-    btn_iniciar_simul.style.display = 'none'
+    chatBox.style.display = 'grid'
+    botaoIniciaSimul.style.display = 'none'
 }
 
 function finalizarAtendimento() {
-    minutoFinal = minutoFinal + minutoglobal
-    segundoFinal = segundoFinal + segundoglobal
+    minutoFinal = minutoFinal + minutoGlobal
+    segundoFinal = segundoFinal + segundoGlobal
     if (segundoFinal == 60) {
         minutoFinal++
         segundoFinal = 0
@@ -255,12 +259,20 @@ function finalizarAtendimento() {
     modal.showModal()
 }
 
-function fecharModal () {
-    window.location.reload()
+function encerrarAtend () {
+    window.location.reload(true)
+}
+
+function transferirAtendimento() {
+    modalTransferir.showModal()
+}
+
+function fecharModal() {
+    modalTransferir.close()
 }
 
 // Botão para iniciar o atendimento
-btn_iniciar_simul.addEventListener('click', iniciarAtendimento)
+botaoIniciaSimul.addEventListener('click', iniciarAtendimento)
 
 // Adicione um ouvinte de eventos para o botão de envio de mensagem
 botaoEnviar.addEventListener('click', enviarMensagem)
@@ -268,8 +280,13 @@ botaoEnviar.addEventListener('click', enviarMensagem)
 // Botão para finalizar o atendimento
 botaoFinalizar.addEventListener('click', finalizarAtendimento)
 
+// Botão para transferir o atendimento
+botaoTransferir.addEventListener('click', transferirAtendimento)
+
 // Botão para atualizar a página após fechar o modal
-botaoFecharModal.addEventListener('click', fecharModal)
+botaoFecharAtend.addEventListener('click', encerrarAtend)
+botaoTransferirAtend.addEventListener('click', encerrarAtend)
+botaoFechaModal.addEventListener('click', fecharModal)
 
 // Envie a mensagem apertando enter
 document.addEventListener('keydown', function(e) {
