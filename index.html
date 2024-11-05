@@ -18,11 +18,26 @@
     </nav>
 
     <!-- Modal resultado final do atendimento -->
-    <dialog>
+    <dialog id="modal-encerrar">
         <h4>Resultado final</h4>
         <p>Tempo total de atendimento: <span id="minutoFinal"></span> minutos e <span id="segundoFinal"></span> segundos</p>
         <p>Quantidade de vezes que o cliente mudou de humor: <span id="humorFinal">0</span></p>
         <button id="modal-button">Fechar</button>
+    </dialog>
+
+    <!-- Modal transferência de atendimento -->
+    <dialog id="modal-transferir">
+        <h4>Transferir atendimento</h4>
+        <form action=#>
+            <label for="Setor">Setor:</label>
+            <select name="Setor">
+                <option value="SAC">SAC</option>
+                <option value="Suporte">Suporte</option>
+                <option value="Retenção">Retenção</option>
+              </select>
+        </form>
+        <button id="modal-button2">Transferir</button>
+        <button id="cancel-button">Cancelar</button>
     </dialog>
 
     <!-- Background -->
@@ -58,10 +73,12 @@
                 <button id="enviar" class="btn btn-light border">Enviar</button>
             </div>
 
-            <!-- Encerrar atendimento -->
+            <!-- Encerrar e transferir atendimento -->
             <div class="container d-flex justify-content-center mb-2">
-                <button id="finalizar">Encerrar</button>
+                <button id="finalizar" class="m-2">Encerrar</button>
+                <button id="transferencia" class="m-2">Transferir</button>
             </div>
+
         </div>
 
         <!-- Info -->
