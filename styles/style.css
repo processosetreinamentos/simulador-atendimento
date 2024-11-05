@@ -6,8 +6,6 @@ body {
     grid-template-areas: 
     'navbar'
     'content';
-    margin: 0;
-    box-sizing: border-box;
 }
 
 .content {
@@ -82,6 +80,22 @@ button {
     transition: 5ms;
     background-color: #8c1717;
     border-color: #680d0d;
+}
+
+#transferencia {
+    background-color: rgb(226, 226, 226);
+    color: black;
+    position: relative;
+    border-radius: 10px;
+    border-color: white;
+    width: 7%;
+    text-align: center;
+}
+
+#transferencia:hover {
+    transition: 5ms;
+    background-color: rgb(204, 204, 204);
+    border-color: rgb(170, 170, 170);
 }
 
 .content-chat {
@@ -163,10 +177,10 @@ button {
 
 .limite-atingido {
     background-color: red;
-    animation: Alarme infinite 27s;
+    animation: Pisca infinite 27s;
 }
 
-@keyframes Alarme{
+@keyframes Pisca{
     0% { background-color: rgb(255, 107, 107); }
     5% { background-color: white; }
     10% { background-color: rgb(255, 107, 107); }
@@ -231,6 +245,25 @@ dialog {
     color: white;
 }
 
+#modal-button2 {
+    border: none;
+    border-radius: 4px;
+    width: 40%;
+    margin-top: 15px;
+}
+
+#modal-button2:hover {
+    background-color: #d61f1f;
+    color: white;
+}
+
 #iniciar_simul {
     border-radius: 6px;
+}
+
+#cancel-button {
+    border: none;
+    border-radius: 4px;
+    width: 40%;
+    margin-top: 15px;
 }
