@@ -6,7 +6,7 @@
 * Melhoria no script de segunda via de boleto;
 
 ### Alterado
-* O Bot enviará mensagem automática após o usuário ficar inativo por 2 minutos e 50 segundos;
+* O Bot enviará uma mensagem automática após o usuário ficar inativo por 2 minutos e 50 segundos, após isso, enviará mensagens automáticas a cada 50 segundos;
 * A indicação de urgência no perfil do cliente é ativada após o usuário ficar inativo por 3 minutos;
 * Caso o bot esteja com o humor Calmo, será alterado para Irritado após o usuário ficar inativo por 3 minutos e 50 segundos;
 
