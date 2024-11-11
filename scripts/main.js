@@ -36,8 +36,8 @@ let intervalo = null
 
 // Definição de Status do Cliente
 const statusCliente = {
-    CALMO: { nome: 'Calmo', tempoMaximo: 2 },
-    IRRITADO: { nome: 'Irritado', tempoMaximo: 4 },
+    CALMO: { nome: 'Calmo' },
+    IRRITADO: { nome: 'Irritado' },
 }
 
 // Função para gerar indice aleatório 
