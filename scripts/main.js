@@ -116,7 +116,7 @@ function respostaAutomatica() {
 function upgradeStatus() {
     let totalTempos = 0
                 
-    if (ultimosTme.length > 4) {
+    if (ultimosTme.length == 4) {
                     
         // Iterar sobre os valores em ULTIMOS_TME
         for (let tempo of Object.values(ultimosTme)) {
@@ -159,13 +159,13 @@ const converter = (seg) => {
 }
 
 function repetirMensagem() {
-    if (contagemMensagens >= 0 & segundoGlobal == 50){
+    if (contagemMensagens >= 0 & minutoGlobal >= 2 & segundoGlobal == 50){
         respostaAutomatica()
     }
 }
 
 function calcularTE() {
-    if (minutoGlobal >= 2) {
+    if (minutoGlobal >= 3) {
         divCliente.classList.add('limite-atingido')
         divCliente.classList.remove('bg-white')
     } else {
@@ -176,7 +176,7 @@ function calcularTE() {
 
 // Função para verificar o tempo de resposta
 function humorTempoEspera() {
-    if (minutoGlobal == dadosStatus.tempoMaximo) {
+    if (minutoGlobal >= 3 & segundoGlobal == 50) {
         if (statusAtual == tipoStatus[0]) {
             dadosStatus = statusCliente.IRRITADO
             statusAtual = tipoStatus[1]
