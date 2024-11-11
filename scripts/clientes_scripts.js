@@ -4,13 +4,19 @@ export const scriptSegundaVia = {
     'boa tarde': 'Boa tarde',
     'boa noite': 'Boa noite',
 
+    // LOCALIZANDO CONTRATO
+    'o cadastro':'Ta bom',
+    'seu cadastro':'Ta ok',
+    'o contrato':'Ta bom',
+    'seu contrato':'Ta ok',
+
     //CONFIRMAÇÃO DE DADOS
     'nome completo': 'Teste da Silva Junior',
     'nome do titular': 'Teste da Silva Junior',
     'cpf': 'CPF 999.999.999-99',
-    'com quem eu falo':'Me chamo Teste',
-    'com quem estou falando':'Me chamo Teste',
-    'com quem estou conversando':'Me chamo Teste',
+    'quem eu falo':'Me chamo Teste',
+    'quem estou falando':'Me chamo Teste',
+    'quem estou conversando':'Me chamo Teste',
     'endereço': 'Rua Testador, nº 1, bairro Teste, cidade Testelândia, CEP 11.111-111',
     'tel': '(99) 99999-9999',
     'email':'testejunior@ficticio.com',
@@ -28,9 +34,9 @@ export const scriptSegundaVia = {
     'deseja anota-lo':'Sim',
 
     // AJUDA
-    'ajuda': 'Quero a segunda via da fatura por email',
-    'ajudá': 'Quero a segunda via da fatura por email',
-    'qual é o problema': 'Quero a segunda via da fatura por email',
+    'ajudar': 'Estou sem sinal de internet',
+    'ajudá-lo': 'Estou sem sinal de internet',
+    'qual é o problema': 'Estou sem sinal de internet',
     'qual o problema':'Estou sem sinal de internet',
     'qual seria o problema': 'Estou sem sinal de internet',
     'qual questão precisa resolver':'Estou sem sinal de internet',
@@ -41,12 +47,6 @@ export const scriptSegundaVia = {
     'motivo pelo qual entrou em contato':'Estou sem sinal de internet',
     'razão do atendimento':'Estou sem sinal de internet',
     'razao do atendimento':'Estou sem sinal de internet',
-
-    // LOCALIZANDO CONTRATO
-    'o cadastro':'Ta bom',
-    'seu cadastro':'Ta ok',
-    'o contrato':'Ta bom',
-    'seu contrato':'Ta ok',
         
     // UM MOMENTO
     'momento': 'Certo',
@@ -99,16 +99,23 @@ export const scriptSemSinal = {
     'bom dia': 'Bom dia',
     'boa tarde': 'Boa tarde',
     'boa noite': 'Boa noite',
+
+    // LOCALIZANDO CONTRATO
+    'o cadastro':'Ta bom',
+    'seu cadastro':'Ta ok',
+    'o contrato':'Ta bom',
+    'seu contrato':'Ta ok',
     
     //CONFIRMAÇÃO DE DADOS
     'nome completo': 'Teste da Silva Junior',
     'nome do titular': 'Teste da Silva Junior',
     'cpf': 'CPF 999.999.999-99',
-    'com quem eu falo':'Me chamo Teste',
-    'com quem estou falando':'Me chamo Teste',
-    'com quem estou conversando':'Me chamo Teste',
+    'quem eu falo':'Me chamo Teste',
+    'quem estou falando':'Me chamo Teste',
+    'quem estou conversando':'Me chamo Teste',
     'endereço': 'Rua Testador, nº 1, bairro Teste, cidade Testelândia, CEP 11.111-111',
-    'tel': '(99) 99999-9999',
+    'R. Emilio L B':'Isso',
+    'tel': 'Telefone (99) 99999-9999',
     'email':'testejunior@ficticio.com',
     'e-mail':'testejunior@ficticio.com',
 
@@ -124,8 +131,8 @@ export const scriptSemSinal = {
     'deseja anota-lo':'Sim',
     
     // AJUDA
-    'ajuda': 'Estou sem sinal de internet',
-    'ajudá': 'Estou sem sinal de internet',
+    'ajudar': 'Estou sem sinal de internet',
+    'ajudá-lo': 'Estou sem sinal de internet',
     'qual é o problema': 'Estou sem sinal de internet',
     'qual o problema':'Estou sem sinal de internet',
     'qual seria o problema': 'Estou sem sinal de internet',
@@ -137,12 +144,6 @@ export const scriptSemSinal = {
     'motivo pelo qual entrou em contato':'Estou sem sinal de internet',
     'razão do atendimento':'Estou sem sinal de internet',
     'razao do atendimento':'Estou sem sinal de internet',
-    
-    // LOCALIZANDO CONTRATO
-    'o cadastro':'Ta bom',
-    'seu cadastro':'Ta ok',
-    'o contrato':'Ta bom',
-    'seu contrato':'Ta ok',
     
     // UM MOMENTO
     'momento': 'Certo',
@@ -211,6 +212,9 @@ export const scriptSemSinal = {
     'voce esta presente':'Estou no local',
     'você esta presente':'Estou no local',
 
+    // TOMADA
+    'na tomada':'Está conectado na tomada',
+
     // CABO
     'bem conectado':'Ta bem encaixado',
     'devidamente conectado':'Ta bem encaixado',
@@ -233,34 +237,41 @@ export const scriptSemSinal = {
     'mexer nos equipamentos':'Não, cheguei em casa e já estava assim',
     'mexeu nos equipamentos':'Não, cheguei em casa e já estava assim',
     'moveu os equipamentos':'Não, cheguei em casa e já estava assim',
+    'mexer no aparelho':'Não, cheguei em casa e já estava assim',
+    'mexeu no aparelho':'Não, cheguei em casa e já estava assim',
+    'moveu o aparelho':'Não, cheguei em casa e já estava assim',
+    'mexer nos aparelhos':'Não, cheguei em casa e já estava assim',
+    'mexeu nos aparelhos':'Não, cheguei em casa e já estava assim',
+    'moveu os aparelhos':'Não, cheguei em casa e já estava assim',
 
     // QUEDA DE ENERGIA
     'queda de energia':'Queda de energia que eu saiba não',
 
     //REINICIAR O EQUIPAMENTO
+    'procedimento':'Tabom',
     'desliga': 'Desliguei',
     'desligue': 'Desliguei',
     'ligar': 'Liguei',
     'ligá-lo': 'Liguei',
     'liga-lo': 'Liguei',
     'ligou': 'Liguei',
-    'ligue':'Liguei e continua com a luz vermelha',
-    'liga novamente':'Liguei e continua com a luz vermelha',
+    'ligue':'Liguei',
+    'liga novamente':'Liguei',
     'remover o equipamento da tomada':'Pronto',
     'assim que desligar':'Desliguei',
     
     // LEDS DO EQUIPAMENTO
-    'luz acesa': 'Sim tem uma luz vermelha',
-    'led aceso': 'Sim tem uma luz vermelha',
-    'leds acesos': 'Sim tem uma luz vermelha',
-    'luz ligada': 'Sim tem uma luz vermelha',
-    'led ligado': 'Sim tem uma luz vermelha',
-    'led ligados': 'Sim tem uma luz vermelha',
-    'leds ligados': 'Sim tem uma luz vermelha',
-    'luzes acesas': 'Sim tem uma luz vermelha',
-    'led vermelho':'Sim tem',
-    'led vermelha':'Sim tem',
-    'luz vermelha':'Sim tem',
+    'luz acesa': 'Tem uma luz vermelha e outras verdes',
+    'led aceso': 'Tem uma luz vermelha e outras verdes',
+    'leds acesos': 'Tem uma luz vermelha e outras verdes',
+    'luz ligada': 'Tem uma luz vermelha e outras verdes',
+    'led ligado': 'Tem uma luz vermelha e outras verdes',
+    'led ligados': 'Tem uma luz vermelha e outras verdes',
+    'leds ligados': 'Tem uma luz vermelha e outras verdes',
+    'luzes acesas': 'Tem uma luz vermelha e outras verdes',
+    'led vermelho':'Tem',
+    'led vermelha':'Tem',
+    'luz vermelha':'Tem',
 
     // INFORMAR O ATENDENTE
     'avisa':'Continua a mesma coisa',
@@ -309,19 +320,16 @@ export const scriptSemSinal = {
     'ponto de referência':'Em frente ao mercado',
     
     // MAIOR DE IDADE NO LOCAL
-    'maior de idade no local':'Sim vai ter maior de idade na casa',
-    'maior de 18 no local':'Sim vai ter maior de idade na casa',
     'maior de 18 anos':'Sim vai ter maior de idade na casa',
     'maior de idade':'Sim vai ter maior de idade na casa',
-    'maiores de idade no local':'Sim vai ter maior de idade na casa',
-    'maiores de 18 no local':'Sim vai ter maior de idade na casa',
-    'maiores de 18 anos':'Sim vai ter maior de idade na casa',
     'maiores de idade':'Sim vai ter maior de idade na casa',
+    'maiores de 18 anos':'Sim vai ter maior de idade na casa',
     
     // CONFIRMANDO SE VOLTOU O SINAL
     'voltou o sinal': 'Ainda está sem sinal',
     'voltou a internet': 'Ainda está sem internet',
     'sinal voltou':'Ainda está sem sinal',
+    'acesso voltou':'Ainda está sem sinal',
     'internet voltou': 'Ainda está sem internet',
     'retornou o sinal': 'Ainda está sem sinal',
     'retornou a internet': 'Ainda está sem internet',
