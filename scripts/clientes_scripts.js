@@ -19,6 +19,10 @@ export const scriptSegundaVia = {
     'quem estou conversando':'Me chamo Teste',
     'endereço': 'Rua Testador, nº 1, bairro Teste, cidade Testelândia, CEP 11.111-111',
     'tel': '(99) 99999-9999',
+    'número de contato':'Telefone (99) 99999-9999',
+    'numero de contato':'Telefone (99) 99999-9999',
+    'número para contato':'Telefone (99) 99999-9999',
+    'numero para contato':'Telefone (99) 99999-9999',
     'email':'testejunior@ficticio.com',
     'e-mail':'testejunior@ficticio.com',
 
@@ -116,6 +120,10 @@ export const scriptSemSinal = {
     'endereço': 'Rua Testador, nº 1, bairro Teste, cidade Testelândia, CEP 11.111-111',
     'R. Emilio L B':'Isso',
     'tel': 'Telefone (99) 99999-9999',
+    'número de contato':'Telefone (99) 99999-9999',
+    'numero de contato':'Telefone (99) 99999-9999',
+    'número para contato':'Telefone (99) 99999-9999',
+    'numero para contato':'Telefone (99) 99999-9999',
     'email':'testejunior@ficticio.com',
     'e-mail':'testejunior@ficticio.com',
 
