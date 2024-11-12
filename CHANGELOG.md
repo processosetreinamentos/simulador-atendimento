@@ -1,5 +1,9 @@
 ﻿# Changelog
 
+## 2.0.0-beta - 12-11-2024
+### Corrigido
+* Melhoria na automação de respostas do Bot, permitindo-o identificar todas as palavras-chave possíveis na frase enviada pelo usuário.
+
 ## 1.1.1-beta - 11-11-2024
 ### Corrigido
 * Melhoria no script de sem sinal de internet;
