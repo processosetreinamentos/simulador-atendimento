@@ -186,8 +186,13 @@ function humorTempoEspera() {
     }
 }
 
-// Função para enviar mensagem
-function enviarMensagem() {
+// Função que adiciona um atraso usando Promise e setTimeout
+function delay(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+// Função que lida com o envio da mensagem e exibe as respostas com atraso
+async function enviarMensagem() {
     const mensagemUsuario = userInput.value.trim()
     
     if (mensagemUsuario) {
@@ -217,11 +222,16 @@ function enviarMensagem() {
         ultimosTme.push(minutoGlobal, segundoGlobal)
         upgradeStatus()
         
-        // Simular resposta automática após o tempo de espera ajustado
-        setTimeout(() => {
-            audioPop.play()
-            exibirMensagem(`Cliente (${dadosStatus.nome})`, gerarResposta(mensagemUsuario), 'cliente')
-        }, 8000);
+        // Obtém todas as respostas de uma vez
+        const respostas = gerarResposta(mensagemUsuario);
+
+        // Exibe cada resposta com um atraso de 15 segundos usando async/await
+        for (let i = 0; i < respostas.length; i++) {
+            const resposta = respostas[i];
+            await delay(15000); // Espera 8 segundos antes de exibir a próxima resposta
+            audioPop.play();
+            exibirMensagem(`Cliente (${dadosStatus.nome})`, resposta, 'cliente');
+        }
     }
 }
 
