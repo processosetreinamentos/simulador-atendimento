@@ -1,9 +1,9 @@
-// Importar as respostas automáticas de saudação
+// Importa os scripts de atendimento
 import { scriptSegundaVia, scriptSemSinal, respostaDesconhecida } from './clientes_scripts.js';
 
 const arrayScript = [scriptSegundaVia, scriptSemSinal]
 
-// Função para gerar indice aleatório 
+// Função para gerar indice aleatório
 function indiceAleatorio(array) {
     var randomArray = Math.floor(Math.random() * array.length)
     return randomArray
@@ -11,41 +11,30 @@ function indiceAleatorio(array) {
 
 let scriptEscolhido = arrayScript[indiceAleatorio(arrayScript)]
 
+// Função que converte a mensagem para minúsculas e remove espaços em volta
 function mensagemMinuscula(texto) {
     return texto.toLowerCase().trim();
 }
 
-// Função para gerar respostas com base nas categorias
+// Função para gerar respostas com base nas palavras-chave encontradas
 export function gerarResposta(mensagem) {
-    // Converte a mensagem para minúsculas e remove espaços em volta
-    const mensagemTratada = mensagemMinuscula(mensagem);
+    const mensagemTratada = mensagemMinuscula(mensagem); 
+    const respostas = [];
 
-    // Inicializa a resposta como nula
-    let resposta = null;
-
-    // Verifica em qual categoria a mensagem se encaixa e seleciona as respostas correspondentes
+    // Verifica as palavras-chave e acumula respostas
     for (const palavraChave in scriptEscolhido) {
-        // Converte a palavra-chave para minúsculas
-        const palavraChaveMinuscula = palavraChave.toLowerCase();
+        const palavraChaveMinuscula = palavraChave.toLowerCase(); // Converte a palavra-chave para minúsculas
 
-        // Verifica se pelo menos uma palavra-chave completa está presente na mensagem do cliente
-
-        if (mensagemTratada.includes(palavraChaveMinuscula)) {
-            resposta = scriptEscolhido[palavraChave];
-            return resposta;
-
-            // Não retorna imediatamente para continuar a verificar outras palavras-chave
+        if (mensagemTratada.includes(palavraChaveMinuscula)) { // Verifica se pelo menos uma palavra-chave completa está presente na mensagem do cliente
+            respostas.push(scriptEscolhido[palavraChave]);
         }
     }
 
-    if (resposta == null) {
-        let indiceAleatorioResposta = respostaDesconhecida[Math.floor(Math.random() * respostaDesconhecida.length)]
-        resposta = indiceAleatorioResposta;
-        return resposta;
+    // Retorna uma resposta desconhecida aleatoriamente caso não seja encontrado a palavra-chave
+    if (respostas.length === 0) {
+        const respostaAleatoria = respostaDesconhecida[Math.floor(Math.random() * respostaDesconhecida.length)];
+        respostas.push(respostaAleatoria);
     }
 
-
-    // COLOCAR 'INDICEALEATÓRIO'(ARRAY)
-
-
+    return respostas;
 }
