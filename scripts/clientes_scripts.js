@@ -214,6 +214,7 @@ export const scriptSemSinal = {
 
     // TOMADA
     'na tomada':'Está conectado na tomada',
+    'da tomada':'Desliguei',
 
     // CABO
     'bem conectado':'Ta bem encaixado',
