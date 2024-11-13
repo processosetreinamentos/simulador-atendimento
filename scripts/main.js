@@ -164,7 +164,7 @@ function repetirMensagem() {
     }
 }
 
-function calcularTE() {
+function limiteEspera() {
     if (minutoGlobal >= 3) {
         divCliente.classList.add('limite-atingido')
         divCliente.classList.remove('bg-white')
@@ -240,7 +240,7 @@ function iniciarAtendimento() {
     tmpini = Date.now()
     intervalo = setInterval(contador, 1000)
     setTimeout(respostaAutomatica, 3000)
-    setInterval(calcularTE, 1000)
+    setInterval(limiteEspera, 1000)
     setInterval(humorTempoEspera, 1000)
     setInterval(repetirMensagem, 1000)
     chatBox.style.display = 'grid'
@@ -263,7 +263,7 @@ function finalizarAtendimento() {
     document.getElementById("segundoFinal").textContent = segundoFinal
     clearInterval(intervalo)
     clearTimeout(respostaAutomatica)
-    clearInterval(calcularTE)
+    clearInterval(limiteEspera)
     clearInterval(humorTempoEspera)
     clearInterval(repetirMensagem)
     modal.showModal()
