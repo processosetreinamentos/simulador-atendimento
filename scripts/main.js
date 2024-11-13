@@ -224,7 +224,7 @@ async function enviarMensagem() {
         // Exibe cada resposta com um atraso de 15 segundos usando async/await
         for (let i = 0; i < respostas.length; i++) {
             const resposta = respostas[i];
-            await delay(15000); // Espera 8 segundos antes de exibir a próxima resposta
+            await delay(15000); // Espera 15 segundos antes de exibir a próxima resposta
             audioPop.play();
             exibirMensagem(`Cliente (${dadosStatus.nome})`, resposta, 'cliente');
         }
