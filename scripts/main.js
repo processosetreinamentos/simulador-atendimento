@@ -112,7 +112,7 @@ function respostaAutomatica() {
     exibirMensagem(`Cliente (${dadosStatus.nome})`, mensagemAutomatica, 'cliente')
 }
 
-//Verifica a soma dos dois últimos TMEs e atualiza o Status do cliente
+//Verifica a soma dos quatro últimos TMEs e atualiza o Status do cliente
 function upgradeStatus() {
     let totalTempos = 0
                 
