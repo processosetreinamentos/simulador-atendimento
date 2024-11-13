@@ -21,7 +21,6 @@ const botaoTransferirAtend = document.getElementById('modal-button2')
 const botaoFechaModal = document.getElementById('cancel-button')
 
 // Variáveis Globais
-let contagemMensagens = 0
 let ultimosTme = []
 let dadosStatus
 let contadorHumor = 0
@@ -159,7 +158,7 @@ const converter = (seg) => {
 }
 
 function repetirMensagem() {
-    if (contagemMensagens >= 0 & minutoGlobal >= 2 & segundoGlobal == 50){
+    if (minutoGlobal >= 2 & segundoGlobal == 50){
         respostaAutomatica()
     }
 }
@@ -214,9 +213,6 @@ async function enviarMensagem() {
         document.getElementById("segundoFinal").textContent = segundoFinal
         
         tmpini = Date.now()
-        
-        // Verificar e atualizar o status do cliente
-        contagemMensagens += 1
         
         // Se o intervalo já estiver sendo executado, limpe-o
         ultimosTme.push(minutoGlobal, segundoGlobal)
