@@ -174,7 +174,7 @@ function limiteEspera() {
     }
 }
 
-// Função para verificar o tempo de resposta
+// Função que muda o humor para Irritado
 function humorTempoEspera() {
     if (minutoGlobal >= 3 & segundoGlobal == 50) {
         if (statusAtual == tipoStatus[0]) {
