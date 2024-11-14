@@ -10,6 +10,7 @@ O projeto consiste em um Chatbot que tem como objetivo demonstrar um atendimento
 ## Ferramentas utilizadas
 * HTML
 * CSS
+* Bootstrap
 * JavaScript
 
 ## Abrir e rodar o projeto
