@@ -1,7 +1,7 @@
 // Importa os scripts de atendimento
-import { scriptSegundaVia, scriptSemSinal, respostaDesconhecida } from './clientes_scripts.js';
+import { scriptSegundaVia, scriptSemSinal, scriptCancelamentoFacil, scriptCancelamentoMedio, respostaDesconhecida } from './clientes_scripts.js';
 
-const arrayScript = [scriptSegundaVia, scriptSemSinal]
+const arrayScript = [scriptSegundaVia, scriptSemSinal, scriptCancelamentoFacil, scriptCancelamentoMedio,]
 
 // Função para gerar indice aleatório
 function indiceAleatorio(array) {
