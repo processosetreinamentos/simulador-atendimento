@@ -362,6 +362,309 @@ export const scriptSemSinal = {
     'avalia': 'O atendimento foi bom',
 }
 
+export const scriptCancelamentoFacil = {
+    // DIA
+    'bom dia': 'Bom dia',
+    'boa tarde': 'Boa tarde',
+    'boa noite': 'Boa noite',
+
+    // LOCALIZANDO CONTRATO
+    'o cadastro':'Ta bom',
+    'seu cadastro':'Ta ok',
+    'o contrato':'Ta bom',
+    'seu contrato':'Ta ok',
+    
+    //CONFIRMAÇÃO DE DADOS
+    'nome completo': 'Teste da Silva Junior',
+    'nome do titular': 'Teste da Silva Junior',
+    'cpf': 'CPF 999.999.999-99',
+    'quem eu falo':'Me chamo Teste',
+    'quem estou falando':'Me chamo Teste',
+    'quem estou conversando':'Me chamo Teste',
+    'endereço': 'Rua Testador, nº 1, bairro Teste, cidade Testelândia, CEP 11.111-111',
+    'tel': '(99) 99999-9999',
+    'número de contato':'Telefone (99) 99999-9999',
+    'numero de contato':'Telefone (99) 99999-9999',
+    'número para contato':'Telefone (99) 99999-9999',
+    'numero para contato':'Telefone (99) 99999-9999',
+    'email':'testejunior@ficticio.com',
+    'e-mail':'testejunior@ficticio.com',
+    
+    // PROTOCOLO
+    'protocolo': 'Ok',
+    'gostaria de saber': 'Sim',
+    'deseja saber':'Sim',
+    'gostaria de anotar': 'Sim',
+    'deseja anotar':'Sim',
+    'gostaria de anotá-lo': 'Sim',
+    'deseja anotá-lo':'Sim',
+    'gostaria de anota-lo': 'Sim',
+    'deseja anota-lo':'Sim',
+
+    // AJUDA
+    'ajudar': 'Quero cancelar meu plano',
+    'ajudá-lo': 'Quero cancelar meu plano',
+    'qual é o problema': 'Sempre fico sem internet depois das 18:30 até umas 23hrs, fica caindo mesmo eu estando perto do roteador, assim não dá quero cancelar',
+    'qual o problema':'Sempre fico sem internet depois das 18:30 até umas 23hrs, fica caindo mesmo eu estando perto do roteador, assim não dá quero cancelar',
+    'qual seria o problema': 'Sempre fico sem internet depois das 18:30 até umas 23hrs, fica caindo mesmo eu estando perto do roteador, assim não dá quero cancelar',
+    'qual questão precisa resolver':'Quero cancelar meu plano',
+    'qual questao precisa resolver':'Quero cancelar meu plano',
+    'precisa de alguma ajuda':'Quero cancelar meu plano',
+    'razão do atendimento':'Quero cancelar meu plano',
+    'razao do atendimento':'Quero cancelar meu plano',
+
+    // MOTIVO
+    'motivo':'Sempre fico sem internet depois das 18:30 até umas 23hrs, fica caindo mesmo eu estando perto do roteador, assim não dá',
+
+    // VERIFICANDO MODO DE USO
+    'pelo cabo':'Só utilizo wi-fi em casa',
+    'no cabo':'Só utilizo wi-fi em casa',
+    'via cabo':'Só utilizo wi-fi em casa',
+    'pelo wi-fi':'O wi-fi desconecta e depois não conecta mais, fica escrito conectado, sem internet',
+    'no wi-fi':'O wi-fi desconecta e depois não conecta mais, fica escrito conectado, sem internet',
+    'via wi-fi':'O wi-fi desconecta e depois não conecta mais, fica escrito conectado, sem internet',
+    'sem sinal':'Desliguei os aparelhos já que não funciona direito, não vou ficar gastando luz atoa',
+
+    // PROCEDIMENTO
+    'procedimento':'Já entrei em contato umas 3 vezes essa semana, sempre o mesmo procedimento, resolve na hora mas no dia seguinte acontece o mesmo problema, quero que cancele meu plano',
+
+    // UM MOMENTO
+    'momento': 'Certo',
+    'instante': 'Ta',
+    'instantes': 'Beleza',
+    'minuto':'Ta',
+
+    // VERIFICANDO
+    'vou verificar': 'Ta',
+    'irei verificar': 'Ta',
+    'estou verificando': 'Ta bom',
+    'estarei verificando': 'Ta bom',
+    'estar verificando': 'Ta bom',
+    'vou analisar': 'Ok',
+    'irei analisar': 'Ok',
+    'estou analisando': 'Ta',
+    'estarei analisando': 'Ta',
+    'estar analisando': 'Ta',
+    'vou acompanhar': 'Ok',
+    'irei acompanhar': 'Ok',
+    'estou acompanhando': 'Ta bom',
+
+    //AGENDAR VISITA
+    'agendar':'Ta bom',
+    'manutenção':'Ta bom',
+    'manutençao':'Ta bom',
+    'agendando': 'Ta bom',
+    'ordem de serviço':'Ta bom',
+    'agendei': 'Fico no aguardo',
+    'agendado': 'Fico no aguardo',
+    'agendada': 'Fico no aguardo',
+    'horário': 'Pode ser no primeiro horário',
+    'horario': 'Pode ser no primeiro horário',
+    'período':'Quero no primeiro horário',
+    'periodo':'Quero no primeiro horário',
+    'vamos ter':'Pode ser no primeiro horário',
+    'teria disponibilidade':'Tenho',
+    'tem disponibilidade':'Tenho',
+    'estaria disponível':'Sim',
+    'estaria disponivel':'Sim',
+    'está disponível':'Sim',
+    'esta disponível':'Sim',
+    'está disponivel':'Sim',
+    'esta disponivel':'Sim',
+    'estar disponível':'Sim',
+    'estar disponivel':'Sim',
+    'posso deixar agendado':'Pode',
+    'posso agendar':'Pode',
+    
+    //ENCAIXE
+    'solicitar um encaixe':'Ok',
+    'solicitado um encaixe':'Ok',
+    'solicitado o encaixe':'Ok',
+    'solicitado encaixe':'Ok',
+    'solicitação de encaixe':'Ok',
+    'solicitação de um encaixe':'Ok',
+    'solicitação do encaixe':'Ok',
+    'encaixe solicitado':'Ok',
+    'encaixe foi solicitado':'Ok',
+    
+    // PONTO DE REFERENCIA
+    'ponto de referencia':'Em frente ao mercado',
+    'ponto de referência':'Em frente ao mercado',
+        
+    // MAIOR DE IDADE NO LOCAL
+    'maior de 18 anos':'Sim vai ter maior de idade na casa',
+    'maior de idade':'Sim vai ter maior de idade na casa',
+    'maiores de idade':'Sim vai ter maior de idade na casa',
+    'maiores de 18 anos':'Sim vai ter maior de idade na casa',
+
+    // DESCONTO
+    'solicitar o desconto': 'Ok',
+    'solicita o desconto': 'Ok',
+    'solicitar desconto': 'Ok',
+    'solicita desconto': 'Ok',
+
+    // TRANSFERÊNCIA
+    'transferir':'Ta bom agradeço',
+    'transferindo':'Ta ok',
+
+    // APP
+    'aplicativo': 'Se resolver o problema eu baixo o aplicativo',
+
+    // FINALIZAÇÃO
+    'algo mais': 'So isso obrigado',
+    'alguma duvida': 'Sem duvidas',
+    'alguma dúvida': 'Sem duvidas',
+    'avalie': 'O atendimento foi bom',
+    'avalia': 'O atendimento foi bom',
+}
+
+export const scriptCancelamentoMedio = {
+    // DIA
+    'bom dia': 'Bom dia',
+    'boa tarde': 'Boa tarde',
+    'boa noite': 'Boa noite',
+
+    // LOCALIZANDO CONTRATO
+    'o cadastro':'Ta bom',
+    'seu cadastro':'Ta ok',
+    'o contrato':'Ta bom',
+    'seu contrato':'Ta ok',
+    
+    //CONFIRMAÇÃO DE DADOS
+    'nome completo': 'Teste da Silva Junior',
+    'nome do titular': 'Teste da Silva Junior',
+    'cpf': 'CPF 999.999.999-99',
+    'quem eu falo':'Me chamo Teste',
+    'quem estou falando':'Me chamo Teste',
+    'quem estou conversando':'Me chamo Teste',
+    'novo endereço': 'O endereço novo é rua Cantidio Nunes, n 50, Barcarena Pará, CEP 68445-000',
+    'endereço novo': 'O endereço novo é rua Cantidio Nunes, n 50, Barcarena Pará, CEP 68445-000',
+    'endereço atual': 'Rua Teste, n 1000, bairro Teste, cidade Testelândia, CEP 00000-000',
+    'endereço antigo': 'Rua Teste, n 1000, bairro Teste, cidade Testelândia, CEP 00000-000',
+    'antigo endereço': 'Rua Teste, n 1000, bairro Teste, cidade Testelândia, CEP 00000-000',
+    'tel': '(99) 99999-9999',
+    'número de contato':'Telefone (99) 99999-9999',
+    'numero de contato':'Telefone (99) 99999-9999',
+    'número para contato':'Telefone (99) 99999-9999',
+    'numero para contato':'Telefone (99) 99999-9999',
+    'email':'testejunior@ficticio.com',
+    'e-mail':'testejunior@ficticio.com',
+    
+    // PROTOCOLO
+    'protocolo': 'Ok',
+    'gostaria de saber': 'Sim',
+    'deseja saber':'Sim',
+    'gostaria de anotar': 'Sim',
+    'deseja anotar':'Sim',
+    'gostaria de anotá-lo': 'Sim',
+    'deseja anotá-lo':'Sim',
+    'gostaria de anota-lo': 'Sim',
+    'deseja anota-lo':'Sim',
+
+    // AJUDA
+    'ajudar': 'Vou me mudar daqui 2 dias, preciso colocar a internet no novo endereço',
+    'ajudá-lo': 'Vou me mudar daqui 2 dias, preciso colocar a internet no novo endereço',
+    'qual é o problema': 'Vou me mudar daqui 2 dias, preciso colocar a internet no novo endereço',
+    'qual o problema':'Vou me mudar daqui 2 dias, preciso colocar a internet no novo endereço',
+    'qual seria o problema': 'Vou me mudar daqui 2 dias, preciso colocar a internet no novo endereço',
+    'qual questão precisa resolver':'Vou me mudar daqui 2 dias, preciso colocar a internet no novo endereço',
+    'qual questao precisa resolver':'Vou me mudar daqui 2 dias, preciso colocar a internet no novo endereço',
+    'precisa de alguma ajuda':'Vou me mudar daqui 2 dias, preciso colocar a internet no novo endereço',
+    'razão do atendimento':'Vou me mudar daqui 2 dias, preciso colocar a internet no novo endereço',
+    'razao do atendimento':'Vou me mudar daqui 2 dias, preciso colocar a internet no novo endereço',
+
+    // DISPONIBILIDADE DO ENDEREÇO
+    'se é atendido':'Aguardo',
+    'se o local é atendido':'Aguardo',
+    'se atendemos':'Beleza',
+    'se tem disponibilidade':'Ta bom',
+    'se tem cobertura':'Ta ok',
+    'se temos disponibilidade':'Beleza',
+    'se temos cobertura':'Beleza',
+    'se ha disponibilidade':'Aguardo',
+    'se há disponibilidade':'Tabom',
+    'se hà disponibilidade':'Ok',
+    'se ha cobertura':'Aguardo',
+    'se há cobertura':'Tabom',
+    'se hà cobertura':'Ok',
+    'não é atendido':'Puts e agora',
+    'nao atendemos':'Eita e agora',
+    'não atendemos':'Eita e agora',
+    'nao tem disponibilidade':'Vixe e agora',
+    'não tem disponibilidade':'E agora',
+    'nao tem cobertura':'Vixe e agora',
+    'não tem cobertura':'E agora',
+    'nao temos disponibilidade':'Oloco e agora',
+    'não temos disponibilidade':'Puts e agora',
+    'nao temos cobertura':'Oloco e agora',
+    'não temos cobertura':'Puts e agora',
+    'nao ha disponibilidade':'Caramba e agora',
+    'não ha disponibilidade':'Nossa e agora',
+    'não há disponibilidade':'Vish e agora',
+    'não hà disponibilidade':'Ah e agora',
+    'nao há disponibilidade':'Ah não e agora',
+    'nao hà disponibilidade':'Vixe e agora',
+    'nao ha cobertura':'Caramba e agora',
+    'não ha cobertura':'Nossa e agora',
+    'não há cobertura':'Vish e agora',
+    'não hà cobertura':'Ah e agora',
+    'nao há cobertura':'Ah não e agora',
+    'nao hà cobertura':'Vixe e agora',
+
+    // MUDANÇA DE TITULARIDADE
+    'mudança de titularidade':'Pior que não tenho alguém para indicar',
+    'parente':'Todos meus parentes estão lá no Pará',
+    'familiar':'Meus familiares não moram mais por aqui',
+    'amig':'As pessoas que conheço já tem alguma internet em casa',
+    'conhecid':'Não tenho ninguém em mente',
+
+    // CANCELAMENTO
+    'cancelar':'Vai ter multa por cancelar?',
+    'cancelamento':'Vai ter multa por cancelar?',
+
+    // SETOR
+    'retenção':'Como faço para falar com eles',
+    'retençao':'Como faço para falar com eles',
+    'setor responsavel':'Como faço para falar com eles',
+    'setor responsável':'Como faço para falar com eles',
+
+    // UM MOMENTO
+    'momento': 'Certo',
+    'instante': 'Tabom',
+    'instantes': 'Beleza',
+    'minuto':'Ta',
+
+    // VERIFICANDO
+    'vou verificar': 'Ta',
+    'irei verificar': 'Ta',
+    'estou verificando': 'Ta bom',
+    'estarei verificando': 'Ta bom',
+    'estar verificando': 'Ta bom',
+    'vou analisar': 'Ok',
+    'irei analisar': 'Ok',
+    'estou analisando': 'Ta',
+    'estarei analisando': 'Ta',
+    'estar analisando': 'Ta',
+    'vou acompanhar': 'Ok',
+    'irei acompanhar': 'Ok',
+    'estou acompanhando': 'Ta bom',
+    
+    // PONTO DE REFERENCIA
+    'ponto de referencia':'Próximo da loja quase tudo',
+    'ponto de referência':'Próximo da loja quase tudo',
+
+    // TRANSFERÊNCIA
+    'transferir':'Ta bom agradeço',
+    'transferindo':'Ta ok',
+
+    // FINALIZAÇÃO
+    'algo mais': 'So isso obrigado',
+    'alguma duvida': 'Sem duvidas',
+    'alguma dúvida': 'Sem duvidas',
+    'avalie': 'O atendimento foi bom',
+    'avalia': 'O atendimento foi bom',
+}
+
 export const aguardandoCalmo = [
     'Estou aguardando o atendimento.', 'Oi', '?', 'Cade meu atendimento', 'Estou no aguardo',
     'Olá', 'Ola', 'Olá?', 'Alguém?',
