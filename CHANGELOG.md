@@ -1,5 +1,10 @@
 ﻿# Changelog
 
+## 2.1.0-beta - 22-11-2024
+### Adicionado
+* Script de argumentação para atendimento de cancelamento por problemas no Wi-Fi.
+* Script de argumentação para atendimento de cancelamento por mudança de endereço.
+
 ## 2.0.0-beta - 12-11-2024
 ### Corrigido
 * Melhoria na automação de respostas do Bot, permitindo-o identificar todas as palavras-chave possíveis na frase enviada pelo usuário.
